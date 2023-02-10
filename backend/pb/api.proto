@@ -1,0 +1,32 @@
+syntax = "proto3";
+option go_package = "/;pb";
+
+
+message User {
+    string username = 1;
+}
+
+message UserSignupRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message UserSignupResponse {
+    User user = 1;
+    bool usernameAlreadyExists = 2;
+    bool invalidCredentials = 3;
+}
+
+message UserLoginRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message UserLoginResponse {
+    User user = 1;
+    bool invalidCredentials = 2;
+}
+
+message EmptyRequest{}
+
+message EmptyResponse{}

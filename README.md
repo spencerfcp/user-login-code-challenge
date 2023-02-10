@@ -1,20 +1,37 @@
-# User Login Code Challenge
+# Thank You
 
-Using a JavaScript framework of your choice (preferably [React](https://reactjs.org/)), create a simple login screen that allows users to enter their username and password and submit the login form to a backend process.
+Thank you for taking the time out to review this. If you have any questionns, don't hestiate to let me know. Looking forward to chatting with you!
 
-Create a backend (preferably using [GoLang](https://go.dev/), but not required) that processes the login information and checks if the username and password are valid. If the login information is valid, the backend should return a success message to the user. If the login information is invalid, the backend should return an error message to the user.
+# Getting Started
 
+This project utilizes Next.js for the Frontend, Go for the backend, and Docker/Postgres for the database.
 
-## Instructions
-1. Click "Use this template" to create a copy of this repository in your personal github account.  
-1. Update the README in your new repo with:
-    * a `How-To` section containing any instructions needed to execute your program.
-    * an `Assumptions` section containing documentation on any assumptions made while interpreting the requirements.
-1. Send an email to Scoir (code_challenge@scoir.com) with a link to your newly created repo containing the completed exercise (preferably no later than one day before your next interview).
+To get started, need to set up the enviornment which can be done through running:
 
-## Expectations
-1. This exercise is meant to drive a conversation between you and Scoir's hiring team.  
-1. Please invest only enough time needed to demonstrate your approach to problem solving and code design.  
-1. Within reason, treat your solution as if it would become a production system.
-1. If you have any questions, feel free to contact us at code_challenge@scoir.com
+- `./setup-dev-machine.sh`
 
+To start database, in `database`:
+
+- make sure docker is running
+- run `docker build -t scoir_db:v1 .` - run `docker compose up -d`
+
+To start backend, in `backend`:
+
+- run `direnv allow`
+- run `go run main.go`
+
+To start frontend, in `frontend`:
+
+- run `pnpm dev`
+
+You should now be able to access and use the application at http://localhost:3000
+
+# Assumptions about this challenge.
+
+- Development will be done on a mac
+- No SSL certificate is necessary
+- Text-based content doesn't need to be translated.
+- No session management is required, only informing the user of a successful login.
+- Should have test coverage
+- API should be built with future requests in mind.
+- Storing .env in github is alright for sake of example.
