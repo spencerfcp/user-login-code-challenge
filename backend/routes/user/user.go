@@ -10,6 +10,7 @@ import (
 	"github.com/spencerfcp/scoirapi/v2/handler"
 	"github.com/spencerfcp/scoirapi/v2/id"
 	"github.com/spencerfcp/scoirapi/v2/pb"
+	"github.com/spencerfcp/scoirapi/v2/validator"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -37,13 +38,8 @@ func InsertUser(p handler.UnauthenticatedParams) (proto.Message, error) {
 	req := p.Message.(*pb.UserSignupRequest)
 	safeUsername := id.Username(strings.ToLower(req.Username))
 
-	// password, err := regexp.Compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$")
-	// if err != nil {
-	// 	return nil, errors.Wrap(err, "unable to compile password regex")
-	// }
-
-	if len(safeUsername) < 2 {
-		return nil, errors.New("invalid request")
+	if len(safeUsername) < 2 || !validator.Password(req.Password) {
+		return nil, errors.New("invalid user creation request")
 	}
 
 	hashedPassword, err := db_user.HashPassword(req.Password)

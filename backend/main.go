@@ -20,7 +20,6 @@ import (
 )
 
 func main() {
-
 	environment := env.GetEnv()
 	db := sqlx.MustOpen("postgres", environment.DatabaseUrl)
 	defer func() {
