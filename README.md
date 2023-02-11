@@ -10,6 +10,11 @@ To get started, need to set up the enviornment which can be done through running
 
 - `./setup-dev-machine.sh`
 
+#### The following links direnv up to whatever shell you're using.
+- `touch ~/.bash_profile`
+- `echo "eval \"\$(direnv hook bash)\"" >> ~/.bash_profile`
+- `echo "eval \"\$(direnv hook zsh)\"" >> ~/.zshrc`
+
 To start database, in `database`:
 
 - make sure docker is running
