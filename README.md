@@ -22,9 +22,15 @@ To start backend, in `backend`:
 
 To start frontend, in `frontend`:
 
+- run `pnpm install`
 - run `pnpm dev`
 
 You should now be able to access and use the application at http://localhost:3000
+
+While you can create a new user, a test user has already been created for you: 
+
+Username: test
+Password: pass
 
 # Assumptions about this challenge.
 
