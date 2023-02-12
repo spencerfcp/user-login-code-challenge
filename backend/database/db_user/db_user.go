@@ -6,9 +6,9 @@ import (
 
 	"github.com/jmoiron/sqlx"
 	"github.com/pkg/errors"
-	"github.com/spencerfcp/scoirapi/v2/database"
-	"github.com/spencerfcp/scoirapi/v2/id"
-	"github.com/spencerfcp/scoirapi/v2/ptr"
+	"github.com/spencerfcp/user-login-code-challenge/backend/database"
+	"github.com/spencerfcp/user-login-code-challenge/backend/id"
+	"github.com/spencerfcp/user-login-code-challenge/backend/ptr"
 	"golang.org/x/crypto/bcrypt"
 )
 

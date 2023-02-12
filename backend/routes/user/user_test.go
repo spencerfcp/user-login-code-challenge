@@ -4,12 +4,12 @@ import (
 	"testing"
 
 	"github.com/jmoiron/sqlx"
-	"github.com/spencerfcp/scoirapi/v2/database/db_user"
-	"github.com/spencerfcp/scoirapi/v2/handler"
-	"github.com/spencerfcp/scoirapi/v2/pb"
-	"github.com/spencerfcp/scoirapi/v2/routes/user"
-	"github.com/spencerfcp/scoirapi/v2/testdb"
-	"github.com/spencerfcp/scoirapi/v2/testreq"
+	"github.com/spencerfcp/user-login-code-challenge/backend/database/db_user"
+	"github.com/spencerfcp/user-login-code-challenge/backend/handler"
+	"github.com/spencerfcp/user-login-code-challenge/backend/pb"
+	"github.com/spencerfcp/user-login-code-challenge/backend/routes/user"
+	"github.com/spencerfcp/user-login-code-challenge/backend/testdb"
+	"github.com/spencerfcp/user-login-code-challenge/backend/testreq"
 	"github.com/stretchr/testify/assert"
 )
 

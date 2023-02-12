@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/jmoiron/sqlx"
-	"github.com/spencerfcp/scoirapi/v2/database/db_user"
-	"github.com/spencerfcp/scoirapi/v2/testdb"
+	"github.com/spencerfcp/user-login-code-challenge/backend/database/db_user"
+	"github.com/spencerfcp/user-login-code-challenge/backend/testdb"
 	"github.com/stretchr/testify/assert"
 )
 

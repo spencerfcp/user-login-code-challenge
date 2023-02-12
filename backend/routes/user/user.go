@@ -5,12 +5,12 @@ import (
 
 	"github.com/jmoiron/sqlx"
 	"github.com/pkg/errors"
-	"github.com/spencerfcp/scoirapi/v2/database"
-	"github.com/spencerfcp/scoirapi/v2/database/db_user"
-	"github.com/spencerfcp/scoirapi/v2/handler"
-	"github.com/spencerfcp/scoirapi/v2/id"
-	"github.com/spencerfcp/scoirapi/v2/pb"
-	"github.com/spencerfcp/scoirapi/v2/validator"
+	"github.com/spencerfcp/user-login-code-challenge/backend/database"
+	"github.com/spencerfcp/user-login-code-challenge/backend/database/db_user"
+	"github.com/spencerfcp/user-login-code-challenge/backend/handler"
+	"github.com/spencerfcp/user-login-code-challenge/backend/id"
+	"github.com/spencerfcp/user-login-code-challenge/backend/pb"
+	"github.com/spencerfcp/user-login-code-challenge/backend/validator"
 	"google.golang.org/protobuf/proto"
 )
 

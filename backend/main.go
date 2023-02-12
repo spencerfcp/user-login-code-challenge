@@ -14,9 +14,9 @@ import (
 	_ "github.com/lib/pq"
 	"github.com/pkg/errors"
 	"github.com/rs/cors"
-	"github.com/spencerfcp/scoirapi/v2/env"
-	"github.com/spencerfcp/scoirapi/v2/logerr"
-	"github.com/spencerfcp/scoirapi/v2/routes"
+	"github.com/spencerfcp/user-login-code-challenge/backend/env"
+	"github.com/spencerfcp/user-login-code-challenge/backend/logerr"
+	"github.com/spencerfcp/user-login-code-challenge/backend/routes"
 )
 
 func main() {

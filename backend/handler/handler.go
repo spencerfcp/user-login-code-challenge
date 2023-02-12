@@ -11,10 +11,10 @@ import (
 
 	"github.com/jmoiron/sqlx"
 	"github.com/pkg/errors"
-	"github.com/spencerfcp/scoirapi/v2/env"
-	"github.com/spencerfcp/scoirapi/v2/httperr"
-	"github.com/spencerfcp/scoirapi/v2/logerr"
-	"github.com/spencerfcp/scoirapi/v2/pb"
+	"github.com/spencerfcp/user-login-code-challenge/backend/env"
+	"github.com/spencerfcp/user-login-code-challenge/backend/httperr"
+	"github.com/spencerfcp/user-login-code-challenge/backend/logerr"
+	"github.com/spencerfcp/user-login-code-challenge/backend/pb"
 
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"

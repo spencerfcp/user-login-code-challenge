@@ -4,10 +4,10 @@ import (
 	"net/http"
 
 	"github.com/jmoiron/sqlx"
-	"github.com/spencerfcp/scoirapi/v2/env"
-	"github.com/spencerfcp/scoirapi/v2/handler"
-	"github.com/spencerfcp/scoirapi/v2/pb"
-	"github.com/spencerfcp/scoirapi/v2/routes/user"
+	"github.com/spencerfcp/user-login-code-challenge/backend/env"
+	"github.com/spencerfcp/user-login-code-challenge/backend/handler"
+	"github.com/spencerfcp/user-login-code-challenge/backend/pb"
+	"github.com/spencerfcp/user-login-code-challenge/backend/routes/user"
 	"google.golang.org/protobuf/proto"
 )
 
