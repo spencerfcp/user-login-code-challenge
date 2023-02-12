@@ -2,6 +2,8 @@
 
 Thank you for taking the time out to review this. If you have any questionns, don't hestiate to let me know. Looking forward to chatting with you!
 
+Application has also been deployed to EC2, available here: http://ec2-52-3-241-109.compute-1.amazonaws.com/
+
 # Getting Started
 
 This project utilizes Next.js for the Frontend, Go for the backend, and Docker/Postgres for the database.
