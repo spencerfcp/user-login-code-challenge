@@ -147,6 +147,7 @@ export default function Home() {
                     data-testid="login_submit_button"
                     aria-label="submit"
                     type="submit"
+                    className="text-white"
                     disabled={formState.isLoading}
                     loading={formState.isLoading}
                   >
