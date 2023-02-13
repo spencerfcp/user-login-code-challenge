@@ -143,6 +143,7 @@ export default function SignUp() {
                     data-testid="signup_submit_button"
                     loading={formState.isLoading}
                     type="submit"
+                    className="text-white"
                     disabled={formState.isLoading}
                   >
                     Sign Up
